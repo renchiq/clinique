@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'home.apps.HomeConfig',
     'services.apps.ServicesConfig',
+    'medical_cards.apps.MedicalCardsConfig',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +80,7 @@ WSGI_APPLICATION = 'stomatology.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'stomatoloyDB',
+        'NAME': 'stomatologyDB',
         'USER': 'postgres',
         'PASSWORD': 'qwerty123',
         'HOST': '127.0.0.1',
